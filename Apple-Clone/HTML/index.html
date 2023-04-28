@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Apple</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="/JS/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="/images/apple-logo-transparent.png" alt="" class="logo" />
+        <ul>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">TV</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <button id="search">Search</button>
+        <button id="bag">Bag</button>
+      </nav>
+      <div class="product-page">
+        <h1>Welcome to Apple</h1>
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="/images/iphone.jpeg" style="width: 100%" />
+          <div class="text">iPhone 14 Pro Max</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="/images/Apple-iPad-Air-5-2022-Wallpapers-Download.jpg.webp"
+            style="width: 100%"
+          />
+          <div class="text">iPad Air</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="/images/macbook.jpeg" style="width: 100%" />
+          <div class="text">Macbook Pro 14 Inch</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="/images/airpods.png" style="width: 100%" />
+          <div class="text">AirPods</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <div class="product-info">
+        <h2 id="product-name">Product Name</h2>
+        <p id="product-description">Product description goes here.</p>
+        <p id="product-price">$0.00</p>
+      </div>
+      <form id="customer-info-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="cellphone">Cellphone:</label>
+        <input type="tel" id="cellphone" name="cellphone" required />
+
+        <button type="submit" id="add-to-cart-btn">Add to Cart</button>
+      </form>
+      <div class="shopping-cart">
+        <h1>Shopping Cart</h1>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <footer>
+        Created By Muzamil Khan 2023 All Rights Reserved Last Updated
+      </footer>
+    </div>
+  </body>
+</html>
